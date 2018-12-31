@@ -1,0 +1,100 @@
+<html>
+<head>
+	<title> Online Hospital </title>
+	
+	<link href="style.css" type="text/css" rel="stylesheet">
+	
+</head>
+<body>
+	
+	<div class="top">
+		<div>
+		 Contact Us +33 6 16 81 72 10 | online@hospital.com 
+		</div>
+	</div>
+	
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td width="600px" style="font-size:50px;font-family:forte;"> <font color="#428bca"> Online  </font><font color="#000"> Hospital</font> </td>
+					<td> <br> <br>
+						<font size="4px"> 
+							<a href="index.html">HOME</a> 
+							<a href="about.html">ABOUT US</a>  
+							<a href="service.html">SERVICE</a>
+							<a href="doctor.html">DOCTORS</a> 
+							<a href="contact.html">CONTACT US</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	
+	
+	<div class="bottom">
+		<div>
+			<table border="0">
+				<tr>
+					<td width="700px">
+						<font color="#000"> Welcome to <mark>Online Hospital</mark> </font> <br> <br>
+
+					<font color="#000" size="6px"> Best Medical & Health care </font> <br> <br>
+
+No need to spend time to go to the hospital. No need to wait.  <br><br>
+
+From now on you can check your lab-test results online. <br><br>
+
+  <h2>Please Enter Your Patient ID</h2>
+  <form method="POST" action="/getdata/">
+	{% csrf_token %}
+    <input type="text" name="username">
+    <button type="submit">Check</button>
+  </form>
+
+<br>
+ </td>
+					
+					
+					<td style="padding-left:20px;"> <img src="about.jpg" width="400px"></td>
+				</tr>
+			
+				
+			</table>
+		</div>
+	</div>
+	
+	<div class="bottom">
+		<div>
+			<table border="0">
+				<tr>
+					<td width="700px">
+						<font color="#000">Address </font> <br> <br>
+
+					<font color="#000" size="6px"> Online Hospital </font> <br> <br>
+
+Batiment C6,<br>
+100, Rue du Novembre <br> Neuilly sur Marne, 93330 <br> Contact No - 0123456789 <br> Email: minhphuongptit@gmail.com<br><br>
+
+
+<br>
+ </td>
+					
+					
+					<td style="padding-left:20px;"> </td>
+				</tr>
+			
+				
+			</table>
+		</div>
+	</div>
+	
+	
+	<div class="nav_down">
+		<div>
+		 &copy; Online Hospital, site designed by MINH 
+		</div>
+	</div>
+	

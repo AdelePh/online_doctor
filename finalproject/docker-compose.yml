@@ -1,0 +1,45 @@
+
+version: '3'
+
+
+
+
+services:
+  web:
+
+    build: 
+      dockerfile: Dockerfile
+      context: ./WebUI
+
+    command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+
+
+    container_name: appui
+
+    volumes:
+
+      - .:/appui
+
+    ports:
+
+      - "8000:8000"
+    depends_on:
+      - app
+
+  app:
+
+   build:
+     dockerfile: Dockerfile
+     context: ./api
+
+   command : bash -c "python flask_demo.py"
+
+   container_name: api
+
+   volumes:
+
+      - .:/api
+
+   ports:
+
+      - "5000:5000"
